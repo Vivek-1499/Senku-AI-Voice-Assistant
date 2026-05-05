@@ -1,1 +1,4 @@
 /envsenku
+engine/__pycache__
+engine/config.py
+file.txt
