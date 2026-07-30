@@ -39,6 +39,16 @@ $(document).ready(function () {
     eel.playAssistantSound()
     $("#Oval").attr("hidden", true);
     $("#SiriWave").attr("hidden", false);
-    eel.allCommands()
+    eel.allCommands()()
   });
+
+  function doc_keyUp(e){
+    if(e.key === 'j' && e.metaKey){
+      eel.playAssistantSound()
+      $("#Oval").attr("hidden", true)
+      $("#SiriWave").attr("hidden", false);
+      eel.allCommands()()
+    }
+  }
+  document.addEventListener('keyup', doc_keyUp, false)
 });
